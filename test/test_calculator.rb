@@ -22,5 +22,8 @@ class CalculatorTest < Test::Unit::TestCase
 	actual = @calculator.multiply(2, 10)
 	assert_equal(20, actual)
   end
-
+  def test_can_divide
+  	actual = @calculator.divide(7, 0)
+  	assert_equal((7.to_f/0.to_f), actual)
+  end
 end
